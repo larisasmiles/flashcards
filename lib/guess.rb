@@ -11,8 +11,10 @@ class Guess
   end
 
   def feedback
-      "Correct!" if correct? #guardclaus
-      "Incorrect!" if !correct?
+      #explicit return
+    return "Correct!" if correct?
+       #guardclaus
+    return "Incorrect!" if !correct?
   end
 
 end
